@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body >
+    <div class="container">
+        <div class="forms">
+            <form class="create-form">
+                <input type="text" name="name" class="name"/>
+                <input type="email" name="email" class="email"/>
+                <button type="button" onclick="create()">create</button>
+            </form>
+            <form class="update-form">
+                <input type="text" hidden class="id"/>
+                <input type="text" name="uname" class="uname"/>
+                <input type="email" name="uemail" class="uemail"/>
+                <button type="button" onclick="update()">update</button>
+            </form>
+            <table>
+                <thead>
+                   <th>name</th>
+                   <th>email</th> 
+                   <th>Action</th>
+                </thead>
+                <tbody class="table_data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
